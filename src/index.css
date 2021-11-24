@@ -6,56 +6,65 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:  #ccffff;
+  background-color: #14192e;
   padding: 20px;
   color: #3b5441;
 }
+body::after {
+  content: "";
+  background-image: url("");
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.userInfo,
-._loginRegister{
+._loginRegister {
   background-color: #ffffff;
   padding: 20px;
   max-width: 400px;
   margin: 0 auto;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
-._loginRegister h1{
+._loginRegister h1 {
   text-align: center;
   margin: 0 0 20px 0;
 }
 
-._loginRegister .form-control{
+._loginRegister .form-control {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-._loginRegister .form-control label{
+._loginRegister .form-control label {
   font-weight: bold;
   margin-bottom: 3px;
 }
 
 [type="text"],
 [type="email"],
-[type="password"]{
-  padding:7px 10px;
+[type="password"] {
+  padding: 7px 10px;
   outline: none;
   margin-bottom: 5px;
   font-size: 16px;
   border-radius: 13px;
-  
-    border: 1px solid rgba(0, 0, 0, .3);
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 [type="text"]:hover,
@@ -63,44 +72,40 @@ code {
 [type="email"]:hover,
 [type="email"]:focus,
 [type="password"]:hover,
-[type="password"]:focus
-{
+[type="password"]:focus {
   border-color: #107a8b;
 }
 
 ._navBtn button,
-[type="submit"]{
+[type="submit"] {
   background: #4b48ff;
   color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 20px;
- 
-  
+
   margin-top: 5px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   outline: none;
 }
 ._navBtn button:hover,
-[type="submit"]:hover{
-  opacity: .9;
+[type="submit"]:hover {
+  opacity: 0.9;
 }
 
-._navBtn{
-  border-top: 1px solid #dedede;
+._navBtn {
   margin-top: 5px;
 }
-._navBtn button{
+._navBtn button {
   background: #555555;
   color: #ffffff;
   width: 100%;
-  
 }
 
 .success-msg,
-.error-msg{
+.error-msg {
   border: 1px solid #ff304f;
   padding: 10px;
   color: #ff304f;
@@ -108,40 +113,51 @@ code {
   border-radius: 2px;
 }
 
-.success-msg{
+.success-msg {
   color: #24b273;
   border-color: #24b273;
 }
 
-.userInfo{
+.userInfo {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 11px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
+    rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
+    rgb(0 0 0 / 9%) 0px -3px 5px;
 }
-
-.userInfo ._img{
+.sEmail{
+  padding: 0 7px;
+}
+.userInfo ._img {
   font-size: 50px;
 }
-.userInfo h1{
+.userInfo h1 {
   text-transform: capitalize;
   margin: 10px 0;
 }
-.userInfo ._email{
+.userInfo ._email {
   margin: 10px 0;
   color: #555555;
 }
-.userInfo button{
+.userInfo button {
   margin-top: 5px;
   background: #ff304f;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
-  border: 5px solid rgba(0, 0, 0, .1);
+  border: 5px solid rgba(0, 0, 0, 0.1);
   outline: none;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
-  transition: background .3s;
+  transition: background 0.3s;
 }
-.userInfo button:hover{
+.userInfo button:hover {
   border-color: #ff304f;
   color: #ff304f;
   background: #ffffff;

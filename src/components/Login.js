@@ -68,7 +68,7 @@ function Login(){
                     <input name="email" type="email" required placeholder="Enter your email" value={state.userInfo.email} onChange={onChangeValue} />
                 </div>
                 <div className="form-control">
-                    <label>PassWord</label>
+                    <label>Password</label>
                     <input name="password" type="password" required placeholder="Enter your password" value={state.userInfo.password} onChange={onChangeValue} />
                 </div>
                 {errorMsg}
